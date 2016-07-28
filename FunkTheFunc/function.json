@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "schedule": "*/5 * * * * *",
+      "name": "myTimer2",
+      "type": "timerTrigger",
+      "direction": "in"
+    },
+    {
+      "queueName": "samples-workitems",
+      "connection": "AzureWebJobsStorage",
+      "name": "processStuff2",
+      "type": "queue",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
